@@ -44,9 +44,9 @@ h2{
 p{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-black);
-    text-align: left;
+    text-align: justify;
     padding: 0 2rem; /*1rem = 16px, 0 for top & bottom padding, 2 for left & right padding*/
-    
+    margin-top: 6rem;
 }
 
 
@@ -68,25 +68,21 @@ p{
 
 /*----------------Main site-------------------*/
 
-
-
-main .container .row .row-items{
-    width: 33.33%;
-    
-    text-align: left;
-    display: flex;
+.container{
     position: relative;
-    margin-left: 1rem;
-    
-    
-    
-}
+    top:60px;
+    margin: 15px; 
+   }
+
+
 
 main .container .row .row-items .boxes{
-    margin-inline: 1rem;
-    padding: 0 1rem;
+    /*top: 0rem;*/
+    position: relative;
+    margin: 1rem; /*1rem = 16px*/
+    padding: 1.5rem;
     background-color: var(--background-gray);
-    width: 100%;
+    border: 3px solid var(--border-color);
     
     
     
@@ -94,24 +90,30 @@ main .container .row .row-items .boxes{
 
 main .container .row .row-items .boxes .corner-boxes-inside{
 
-    margin-left: 20rem;
-    margin-right: 1rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    padding: 0rem 3rem;
+    border-left: 3px solid var(--border-color);
+    border-bottom: 3px solid var(--border-color);
     
     
 }
 
-main .container .row .row-items .boxes .corner-boxes-inside #chickenH2{
+#ChickenDiv{
     background-color: var(--pink-boxes);
-    
-    
+   
 }
-main .container .row .row-items .boxes .corner-boxes-inside #BeefH2{
+#BeefDiv{
     background-color: var(--red-boxes);
-    color: var(--white);
-    
+     
 }
 
-main .container .row .row-items .boxes .corner-boxes-inside #SushiH2{
+#BeefH2{
+    color: var(--white);
+}
+
+#SushiDiv{
     background-color: var(--orange-boxes);
     
 }
@@ -121,20 +123,68 @@ main .container .row .row-items .boxes .corner-boxes-inside #SushiH2{
 
 /*Responsive screen*/
 
-@media only screen and (min-width: 992px) {
-    
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;  
+      }
+      .col-lg-1 {
+        width: 8.33%;
+      }
+      .col-lg-2 {
+        width: 16.66%;
+      }
+      .col-lg-3 {
+        width: 25%;
+      }
+      .col-lg-4 {
+        width: 33.33%;
+      }
+      .col-lg-5 {
+        width: 41.66%;
+      }
+      .col-lg-6 {
+        width: 50%;
+      }
+      .col-lg-7 {
+        width: 58.33%;
+      }
+      .col-lg-8 {
+        width: 66.66%;
+      }
+      .col-lg-9 {
+        width: 74.99%;
+      }
+      .col-lg-10 {
+        width: 83.33%;
+      }
+      .col-lg-11 {
+        width: 91.66%;
+      }
+      .col-lg-12 {
+        width: 100%;
+      }
 
 }
 
-@media only screen and (max-width: 991) {
-    .col-md-1{
-        width: 10%;
+@media (min-width: 766px) and (max-width: 991px) {
+    .col-lg-4 {
+        width: 50%;
+        float: left;
+      }
+      .col-md-1{
+        width: 100%;
+        float: left;
+      }
+
+
+}
+
+@media (max-width: 767px) {
+    .col-lg-4 {
+        width: 100%;
+        float: left;
+      }
+    .nav{
+        min-height: 7vh;
     }
-    
-
 }
-
-@media only screen and (max-width: 767px) {
-
-}
-
