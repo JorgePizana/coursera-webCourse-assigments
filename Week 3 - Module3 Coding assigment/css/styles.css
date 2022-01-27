@@ -6,7 +6,7 @@ html, body {
 
 :root{
     /*theme colors*/
-    --text-gray: #3f4954;
+    --gray: #596169;
     --text-light: #686666da;
     --bg-color: #0f0f0f;
     --white: #ffffff;
@@ -17,24 +17,57 @@ html, body {
 
 
 /*------------navbar--------------*/
+
 #header-nav{
     background-color: var(--lava);
     border-radius: 0;
     border: 0;
-    padding: 1vh;
+    padding: 0; 
+
 }
-#header-nav .container{
+#header-nav .container-fluid{
     justify-content: space-between;
+    padding: 0;
 }
-#header-nav .container a{
+#header-nav .container-fluid a{
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 1.5rem;
+}
+
+.navbar-toggler .fas{
+    color: var(--white);
+    font-size: 1.5rem;
+    padding-right: 1rem;
     
+}
+
+#header-nav .navbar-nav{
+    background-color: var(--white);
     
 }
 
 
+#header-nav .navbar-nav .nav-item a{
+    color: var(--lava);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5rem;
+}
+
+#header-nav .navbar-nav .nav-item:hover{
+    background-color: var(--gray);
+    transition: all 0.5s ease;
+}
+
+#header-nav .navbar-nav .nav-item a:hover{
+    color: var(--white);
+    transition: all 0.5s ease;
+}
 
 
 
