@@ -1,19 +1,28 @@
 html, body {
     margin: 0%;
     box-sizing: border-box;
-    background-color: var(--white);
+    background-color: var(--lightLava);
 }
 
 :root{
     /*theme colors*/
     --gray: #596169;
-    --text-light: #686666da;
+    --textLight: #686666da;
     --bg-color: #0f0f0f;
     --white: #ffffff;
     --midnight:  #104f55;
     --lava: #e69f59;
+    --lightLava: #ffd5ac;
+    --midnightLower: #2d7177b6;
 }
 
+/*------------General Config--------------*/
+h1{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--lightLava);
+}
+/*----x-------General Config-----x--------*/
 
 
 /*------------navbar--------------*/
@@ -72,3 +81,17 @@ html, body {
 
 
 /*-----x------navbar-----x-------*/
+
+
+/*------------ Header Section --------------*/
+
+.header-section .container-fluid{
+    padding: 0; 
+    background-color: var(--lightLava);  
+}
+
+.header-section .container-fluid .row .col h1{
+    padding: 1.5rem;
+}
+
+/*------x----- Header Section -------x------*/
