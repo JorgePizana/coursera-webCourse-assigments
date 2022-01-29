@@ -22,6 +22,12 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--lightLava);
 }
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    text-align: justify;
+}
 /*----x-------General Config-----x--------*/
 
 
@@ -92,6 +98,46 @@ h1{
 
 .header-section .container-fluid .row .col h1{
     padding: 1.5rem;
+    color: var(--gray);
+    font-weight: bold;
 }
 
 /*------x----- Header Section -------x------*/
+
+/*------------ Main Section --------------*/
+main{
+    background-color: var(--lightLava);
+}
+
+
+.container h1{
+    background-color: var(--midnight);
+    color: var(--white);
+    
+}
+
+.container .row{
+    background-color: var(--midnight);
+}
+
+.container .row .col-md-4{
+    border-left: 1rem solid var(--lightLava);
+    padding: 1rem;
+}
+
+.container .row .col-sm-12{
+    border-top: 1rem solid var(--lightLava);
+    
+    padding: 1rem;
+}
+
+.container .row .col-12{
+    border-right: 1rem solid var(--lightLava);
+    border-top: 1rem solid var(--lightLava);
+    
+    padding: 1rem;
+}
+
+
+
+/*------x------ Main Section -------x-------*/
