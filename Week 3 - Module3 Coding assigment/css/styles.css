@@ -123,19 +123,29 @@ main{
 .container .row .col-md-4{
     border-left: 1rem solid var(--lightLava);
     padding: 1rem;
+    height: 700px;
 }
 
 .container .row .col-sm-12{
     border-top: 1rem solid var(--lightLava);
-    
+    height: 700px;
     padding: 1rem;
 }
 
 .container .row .col-12{
     border-right: 1rem solid var(--lightLava);
     border-top: 1rem solid var(--lightLava);
-    
+    height: 700px;
     padding: 1rem;
+}
+
+main .bottom-section{
+    padding-top: 2rem;
+}
+main .bottom-section .btn{
+    background-color: var(--lava);
+    outline-color: var(--lava);
+    
 }
 
 
